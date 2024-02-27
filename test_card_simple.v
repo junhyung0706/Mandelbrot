@@ -69,12 +69,12 @@ module test_card_simple #(H_RES=800, V_RES=600) (
     end
     
     always @ (posedge i_clk) begin
-//        if (is_convergence) begin   //¼ö·ÅÇÏ´Â °æ¿ì
+//        if (is_convergence) begin   //ìˆ˜ë ´í•˜ëŠ” ê²½ìš°
 //            red <= 8'd82;
 //            green <= 8'd34;
 //            blue <= 8'd5;
 //        end
-//        else begin                  //¹ß»êÇÏ´Â °æ¿ì
+//        else begin                  //ë°œì‚°í•˜ëŠ” ê²½ìš°
         if (done) begin 
             if (n==0) begin
                 red <= 8'd0;
@@ -245,4 +245,3 @@ module test_card_simple #(H_RES=800, V_RES=600) (
     assign o_done = done;
     
 endmodule
-//nogada
